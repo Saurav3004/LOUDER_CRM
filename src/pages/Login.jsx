@@ -8,16 +8,16 @@ export default function CRMLogin() {
   const [rememberMe, setRememberMe] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     setIsLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
     
-//     // Simulate login process
-//     setTimeout(() => {
-//       setIsLoading(false);
-//       alert('Login successful! (This is a demo)');
-//     }, 2000);
-//   };
+    // Simulate login process
+    setTimeout(() => {
+      setIsLoading(false);
+      alert('Login successful! (This is a demo)');
+    }, 2000);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700 flex items-center justify-center p-4">
@@ -104,7 +104,7 @@ export default function CRMLogin() {
           </div>
 
           {/* Login Button */}
-          <button
+          <button onClick={handleSubmit}
             type="submit"
             disabled={isLoading}
             className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"

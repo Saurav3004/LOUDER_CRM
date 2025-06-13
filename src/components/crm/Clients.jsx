@@ -270,7 +270,7 @@ const Clients = () => {
                     <img
                       src={client.avatar}
                       alt={client.name}
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-12 h-12 rounded-full object-cover "
                     />
                     <div>
                       <div className="font-medium text-gray-900">
