@@ -8,16 +8,16 @@ export default function CRMLogin() {
   const [rememberMe, setRememberMe] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setIsLoading(true);
     
-    // Simulate login process
-    setTimeout(() => {
-      setIsLoading(false);
-      alert('Login successful! (This is a demo)');
-    }, 2000);
-  };
+//     // Simulate login process
+//     setTimeout(() => {
+//       setIsLoading(false);
+//       alert('Login successful! (This is a demo)');
+//     }, 2000);
+//   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700 flex items-center justify-center p-4">
