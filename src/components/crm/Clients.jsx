@@ -14,6 +14,7 @@ import {
   DollarSign,
   Ticket,
   BookIcon,
+  Activity,
 } from 'lucide-react';
 
 const Clients = () => {
@@ -220,7 +221,7 @@ const Clients = () => {
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">DOB</th>
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Total Amount</th>
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Event Name</th>
-    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Ticket Type</th>
+    <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Quantity</th>
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Payment Status</th>
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Booking Status</th>
     <th className="px-6 py-3 text-left text-sm font-semibold text-gray-500">Actions</th>
@@ -283,8 +284,8 @@ const Clients = () => {
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-700">
                   <div className="flex items-center space-x-2">
-                    <Ticket className="w-4 h-4 text-gray-400" />
-                    <span>{client.ticketType}</span>
+                    <Activity className="w-4 h-4 text-gray-400" />
+                    <span>{client.quantity}</span>
                   </div>
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-700">
