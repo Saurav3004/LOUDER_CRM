@@ -70,10 +70,7 @@ const Clients = () => {
           <h1 className="text-3xl font-bold text-gray-900">Contacts</h1>
           <p className="text-gray-600">Manage your client contacts and details.</p>
         </div>
-        <button className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center space-x-2 mt-4 sm:mt-0">
-          <Plus className="w-5 h-5" />
-          <span>Add Client</span>
-        </button>
+        
       </div>
 
       {/* Search Bar */}
